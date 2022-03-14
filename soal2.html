@@ -2,43 +2,43 @@
 <html>
 <head>
     <title>Kalkulator Sederhana</title>
+    
 <script LANGUAGE = "JavaScript">
     
     function tambah(){ 
-        bil1=eval(document.getElementById("bil1").value);
-        bil2=eval(document.getElementById("bil2").value);
-        hasil=bil1+bil2;
+        var a=eval(document.getElementById("bil1").value);
+        var b=eval(document.getElementById("bil2").value);
+        var hasil=a+b;
         document.getElementById("hasil").value=hasil;
     }
     
     function kurang(){ 
-        bil1=document.getElementById("bil1").value;
-        bil2=document.getElementById("bil2").value;
-        hasil=bil1-bil2;
+        var a=document.getElementById("bil1").value;
+        var b=document.getElementById("bil2").value;
+        var hasil=a-b;
         document.getElementById("hasil").value=hasil;
     }
 
     function kali(){ 
-        bil1=document.getElementById("bil1").value;
-        bil2=document.getElementById("bil2").value;
-        hasil=bil1*bil2;
+        var a=document.getElementById("bil1").value;
+        var b=document.getElementById("bil2").value;
+        var hasil=a*b;
         document.getElementById("hasil").value=hasil;
     }
        
     function bagi(){ 
-        bil1=document.getElementById("bil1").value;
-        bil2=document.getElementById("bil2").value;
-        hasil=bil1/bil2;
+        var a=document.getElementById("bil1").value;
+        var b=document.getElementById("bil2").value;
+        var hasil=a/b;
         document.getElementById("hasil").value=hasil;
     }
 </script> 
 </head>
 
 <body>
-     <form>
+     <form method="POST" name="form">
          <h1>KALKULATOR</h1>
-          
-            
+                      
             Bilangan 1 : <input type="text" id="bil1" name="bil1">
             <br>
             <br>
@@ -51,8 +51,7 @@
                 <input type="button" value="/" onClick="bagi()">
             <br>
             <br>
-            Hasil : <input type="text" id="hasil" name="hasil">
-                        
+            Hasil : <input type="text" id="hasil" name="hasil">           
           
     </form>
 </body>
